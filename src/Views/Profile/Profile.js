@@ -12,6 +12,7 @@ class Profile extends React.Component {
       <View style={styles.container}>
         <Text>Profile</Text>
         <Text>{this.props.UserData.login}</Text>
+        <Text>{this.props.UserData.score}</Text>
       </View>
     )
   }

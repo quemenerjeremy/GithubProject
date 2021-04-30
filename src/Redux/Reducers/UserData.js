@@ -3,7 +3,7 @@ import { LOGIN_USER} from '../Actions/ActionsTypes';
 
 const initialState = {
    id: null,
-   login: "quemenerjeremy",
+   login: null,
    avatar_url: "",
    followers_url: "",
    repos_url: "",
