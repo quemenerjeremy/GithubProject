@@ -9,7 +9,7 @@ export default class Home extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Home</Text>
+        <Text style={{color: '#EAE6E5'}}>Home</Text>
       </View>
     )
   }
@@ -20,6 +20,5 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    color: 'red'
   },
 })

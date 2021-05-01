@@ -28,8 +28,6 @@ class SignIn extends React.Component {
         this.props.navigation.navigate("HomeScreen")
       }
         console.log("coucou", data.data.items[0].login)
-      // if (data.status)
-
     })
   }
 

@@ -10,9 +10,9 @@ class Profile extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Profile</Text>
-        <Text>{this.props.UserData.login}</Text>
-        <Text>{this.props.UserData.score}</Text>
+        <Text style={{color: 'red'}}>Profile</Text>
+        <Text style={{color: 'red'}}>{this.props.UserData.login}</Text>
+        <Text style={{color: 'red'}}>{this.props.UserData.score}</Text>
       </View>
     )
   }

@@ -1,9 +1,5 @@
 
 import React from "react";
-import { NavigationContainer } from "@react-navigation/native";
-
-import BottomTabNavigator from "./src/Navigation/NavigationBottom";
-import HomeScreenNav from './src/Navigation/HomeNav'
 
 import { Provider } from 'react-redux';
 import Store from './src/Redux/ConfigureStore';
