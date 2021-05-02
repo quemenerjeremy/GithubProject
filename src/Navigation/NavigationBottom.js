@@ -37,7 +37,9 @@ const BottomNavigation = () => {
                 position:'absolute',
                 shadowRadius: 20,
                 shadowColor: '#000000',
+                shadowOffset: { width: 1, height: 1 },
                 shadowOpacity: 1,
+                elevation: 5,
                 width: 300,
                 marginLeft: 40, 
                 marginBottom: 10

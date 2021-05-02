@@ -17,17 +17,23 @@ class SignIn extends React.Component {
     await SearchUser.SpecificUser("quemenerjeremy").then(data => {
       if (data.status === 200) {
         this.props.dispatch(loginUserAction({
-          id: data.data.items[0].id,
-          login: data.data.items[0].login,
-          avatar_url: data.data.items[0].avatar_url,
-          followers_url: data.data.items[0].followers_url,
-          repos_url: data.data.items[0].repos_url,
-          type: data.data.items[0].type,
-          score: data.data.items[0].score
+          id: data.data.id,
+          login: data.data.login,
+          bio: data.data.bio,
+          email: data.data.email,
+          avatar_url: data.data.avatar_url,
+          followers: data.data.followers,
+          followers_url: data.data.followers_url,
+          following: data.data.following,
+          following_url: data.data.following_url,
+          urlAccount: data.data.html_url,
+          nbRepo: data.data.public_repos,
+          repos_url: data.data.repos_url,
+          type: data.data.type,
+          score: data.data.score
         }))
         this.props.navigation.navigate("HomeScreen")
       }
-        console.log("coucou", data.data.items[0].login)
     })
   }
 
